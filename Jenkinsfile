@@ -12,6 +12,7 @@ pipeline {
             }
         }
     }
+}
 
 /*    environment {
         DOCKER_IMAGE = "demo-app"
