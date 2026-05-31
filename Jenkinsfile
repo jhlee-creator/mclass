@@ -13,3 +13,16 @@ pipeline {
         }
     }
 }
+
+/*    environment {
+        DOCKER_IMAGE = "demo-app"
+        CONTAINER_NAME = "springboot-container"
+        JAR_FILE_NAME = "app.jar"
+        PORT = "8081"
+        REMOTE_USER = "ec2-user"
+        REMOTE_HOST = "43.202.34.166"
+        REMOTE_DIR = "/home/ec2-user/deploy"
+    }
+
+}
+*/
