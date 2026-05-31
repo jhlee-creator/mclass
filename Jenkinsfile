@@ -47,7 +47,7 @@ pipeline {
 
         stage('Remote Docker Build & Deploy') {
             steps {
-                ssgagent (credentilas: [env.SSH_CREDENTIALS_ID]) {
+                sshagent (credentials: [env.SSH_CREDENTIALS_ID]) {
                     sh"""
 ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null ${REMOTE_USER}@${REMOTE_HOST} << ENDSSH
     cd ${REMOTE_DIR} || exit 1
